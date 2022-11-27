@@ -10,7 +10,7 @@ const Newsletter = () => {
     console.log(form.current)
 
     emailjs
-      .sendForm("gmail", "template_YeJhZkgb", form.current, "your-token")
+      .sendForm("service_o0w4nos", "template_ptl0us9", form.current)
       .then(
         () => {
           alert("Message successfully sent!");
