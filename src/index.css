@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth !important;
 
+}
+
+h1,h2,h3,h4,div,p{
+  cursor: default;
+}
 body{
-
   background: linear-gradient(to left, #9574cd, #a47bd0, #b382d2, #c08ad5, #cd92d8);
 
 }

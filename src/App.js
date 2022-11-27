@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Newsletter from "./components/NewsLetter";
 import Cards from "./components/Cards";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const App = () => {
   return (
@@ -13,6 +15,7 @@ export const App = () => {
       <Info></Info>
       <Cards></Cards>
       <Newsletter></Newsletter>
+      <ToastContainer />
     </div>
   );
 };

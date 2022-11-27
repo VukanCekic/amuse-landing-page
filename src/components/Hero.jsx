@@ -1,8 +1,14 @@
 import React from 'react';
 import Typed from "react-typed"
 const Hero = () => {
+
+  const scroll = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView();
+  }
+
   return (
-    <div className='max-w-[800px] mt-[-96px] w-full  h-screen mx-auto text-center flex flex-col justify-center'>
+    <div id='hero-section' className='max-w-[800px] mt-[-96px] w-full  h-screen mx-auto text-center flex flex-col justify-center'>
     <p className='text-white font-bold uppercase'>
      Connecting / Music / And / People
     </p>
@@ -11,15 +17,15 @@ const Hero = () => {
     </h1>
     <div className='flex justify-center items-center'>
     <p className='md:text-2xl text-xl font-bold text-white'>Experience social media through your favorite</p>
-      <Typed
+    </div>
+    <Typed
           className='md:text-2xl text-xl font-bold md:pl-4 pl-2 text-tetriary'
             strings={['ARTISTS', 'MUSIC']}
             typeSpeed={120}
             backSpeed={140}
             loop
           />
-    </div>
-    <button className='bg-tetriary w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white'>Learn more</button>
+    <button className='bg-tetriary w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white' onClick={() => scroll('contact-section')}>Learn more</button>
   </div>  );
 };
 
